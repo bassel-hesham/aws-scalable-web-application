@@ -1,9 +1,9 @@
 # Scalable Web Application with ALB and Auto Scaling (EC2-Based)
 Manara Tech · AWS Solutions Architect Associate · Region: us-east-1
 
-![Architecture](aws-architecture-diagram.png)
+![Architecture](architecture/aws-architecture-diagram.png)
 
-Editable source: `aws-architecture-diagram.svg` (opens in draw.io, Inkscape, Figma).
+Editable source: [aws-architecture-diagram.svg](architecture/aws-architecture-diagram.svg) (opens in draw.io, Inkscape, Figma).
 
 ## Architecture summary
 - **Network:** Production VPC `10.0.0.0/16`, two AZs, six subnets (Public `10.0.1.0/24`, `10.0.2.0/24`; Private App `10.0.11.0/24`, `10.0.12.0/24`; Private DB `10.0.21.0/24`, `10.0.22.0/24`). The Internet Gateway is attached to the VPC. Each public subnet holds its own NAT Gateway; each private app subnet routes `0.0.0.0/0` to the NAT Gateway in its own AZ. DB subnets have local routes only.
