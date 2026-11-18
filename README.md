@@ -30,4 +30,19 @@ The architecture is designed to handle varying traffic loads, maintain applicati
 | AWS IAM | Manages access and permissions |
 | Amazon VPC | Provides network isolation |
 | Security Groups | Controls inbound and outbound traffic |
+## How It Works
+
+1. Users access the application through Amazon CloudFront.
+2. CloudFront forwards dynamic requests to the Application Load Balancer.
+3. The Application Load Balancer distributes incoming traffic across EC2 instances.
+4. EC2 instances run inside an Auto Scaling Group across multiple Availability Zones.
+5. The application communicates with Amazon RDS to store and retrieve data.
+6. RDS Multi-AZ provides database availability through standby replication.
+
+## Security
+
+- Network isolation using Amazon VPC.
+- Traffic control using Security Groups.
+- Access management using AWS IAM.
+- Private subnets for application and database resources.
 
