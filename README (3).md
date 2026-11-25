@@ -31,8 +31,8 @@ notifications through Amazon CloudWatch and Amazon SNS.
 
 The architecture diagram files are available in the root directory.
 
-- `architecture-diagram (2).drawio.png` — architecture diagram preview.
-- `architecture-diagram (2).drawio` — editable source file created with diagrams.net (draw.io).
+- [Architecture Diagram Preview](./architecture-diagram%20(2).drawio.png)
+- [Editable Architecture Diagram (Draw.io)](./architecture-diagram%20(2).drawio) — Open and edit the original diagram using diagrams.net.
 
 ![Scalable Web Application Architecture](./architecture-diagram%20(2).drawio.png)
 ## 3. Request Flow
