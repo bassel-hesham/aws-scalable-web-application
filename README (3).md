@@ -32,7 +32,7 @@ notifications through Amazon CloudWatch and Amazon SNS.
 The architecture diagram is available in the root directory.
 
 - `architecture-diagram (1).png` — diagram preview.
-- `architecture-diagram (2).drawio` — editable source file created with diagrams.net (draw.io).
+- `architecture-diagram (2).drawio.png` — editable diagram image.
 
 ![Scalable Web Application Architecture](./architecture-diagram%20(1).png)
 ## 3. Request Flow
